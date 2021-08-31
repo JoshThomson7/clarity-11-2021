@@ -20,10 +20,9 @@
                     <h5>Find Us <span class="ion-ios-plus-empty"></span></h5>
 
                     <ul class="contact">
-                        <li>Mathew House,</li>
-                        <li>Gorey Village,</li>
-                        <li>Jersey,</li>
-                        <li>Channel Islands, JE3 9EP</li>
+                        <li>159 Hatfield Rd,</li>
+                        <li>St Albans,</li>
+                        <li>AL1 4LB</li>
                     </ul>
                 </article>
 
@@ -31,8 +30,8 @@
                     <h5>Contact Us <span class="ion-ios-plus-empty"></span></h5>
 
                     <ul>
-                        <li><i class="fa fa-phone"></i><a href="tel:01534840400">01534 840 400</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:info@quereeoptometrists.co.uk">info@quereeoptometrists.co.uk</a></li>
+                        <li><i class="fa fa-phone"></i><a href="tel:01727614043">01727 614 043</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:info@clarity11.co.uk">info@clarity11.co.uk</a></li>
                     </ul>
                 </article>
 
@@ -59,9 +58,9 @@
 
         <div class="subfooter">
             <div class="subfooter__credits">
-                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.webp" alt="<?php bloginfo('name'); ?>">
                 <p>&copy;<?php bloginfo('name') ?> <?php echo date("Y"); ?></p>
-                <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p>
+                <!-- <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p> -->
             </div><!-- subfooter__credits -->
         </div><!-- subfooter -->
             

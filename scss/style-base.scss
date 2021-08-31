@@ -74,7 +74,7 @@ body { font-family:$primaryFont; font-size:$baseFontSize;  color:$text; overflow
 }
 
 #page { 
-    background:$cream; display: flex; flex-direction: column;
+    background:$white; display: flex; flex-direction: column;
 
     // &.background-sphere{
     //     background-image: url(img/left-elipse.png); background-position: top left; background-repeat: no-repeat; background-size: 800px;
@@ -250,7 +250,7 @@ a.button, button.button { display: flex; background: $secondary; align-self: fle
 
 header.header { width:100%; transition: top .3s ease; position: sticky; z-index: 999999999; top: 0;
 
-    .header__main { position: relative; background: $cream;
+    .header__main { position: fixed; width: 100%;
         @include breakpoint(papabear) { padding: 5px 0;}
 
         .max__width { display: flex; justify-content: space-between; align-items: center;}
@@ -277,15 +277,15 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             .logo {
     
                 a { display:block;
-                    img { width: 280px; align-self:center; margin: 0 auto;
-                        @include breakpoint(papabear) { width: 200px;}
+                    img { width: 150px; align-self:center; margin: 0 auto;
+                        @include breakpoint(papabear) { width: 150px;}
                         @include breakpoint(mamabear) { width: 150px;}
                     }
                 }
             }
         }
 
-        .header__cta{ display: flex; align-items: flex-end; flex-direction: column;
+        .header__cta{ display: flex; align-items: center; width: 100%; justify-content: space-around; margin: 10px 0;
             @include breakpoint(papabear) { flex-direction: row; align-items: center;}
 
             .header__menu{
@@ -365,15 +365,14 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             }
 
             .contact{
-                margin: 10px 0 15px;
                 @include breakpoint(papabear) { margin-right: 30px; margin-bottom: 0;}
                 @include breakpoint(teenbear) {display: none;}
 
                 li{
 
-                    i{color: $primary; margin-right: 7px; font-size: 22px;}
+                    i{color: $white; margin-right: 7px; font-size: 22px;}
 
-                    a{ color: darken($text, 20%); font-family: $primaryFont;
+                    a{ color: $white; font-family: $primaryFont;
                         &:hover{
                             color: $secondary;
 
@@ -590,7 +589,7 @@ footer { padding: 0; position: relative;
     }
 
     .subfooter {
-        background: $cream; padding: 40px 0 20px;
+        background: $white; padding: 40px 0 20px;
         @include breakpoint(papabear) { margin-top: 0; border-top: none;}
 
         .subfooter__credits { display:flex; flex-direction: column; text-align: center; align-items: center;

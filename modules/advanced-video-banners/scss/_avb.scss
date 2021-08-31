@@ -20,7 +20,7 @@ section.banners { position: relative; overflow: hidden;
 
     #home_banners{
         .banner{
-            height: 500px; min-height: 500px;
+            height: 80vh; min-height: 500px;
         }
     }
 
@@ -50,12 +50,12 @@ section.banners { position: relative; overflow: hidden;
                 @include breakpoint(mamabear) { margin: 0 auto 20px;}
             }
 
-            h2 { font-size: 60px; color: #fff; font-weight: normal; padding: 0 0 40px; line-height: 64px; font-family: $boldFont;
+            h2 { font-size: 80px; color: #fff; font-weight: normal; padding: 0 0 40px; line-height: 64px; font-family: $khalifa; text-transform: uppercase; letter-spacing: 10px;
                 @include breakpoint(brotherbear) { font-size: 32px; line-height: 32px;}
                 @include breakpoint(mamabear) {  font-size: 28px; line-height: 30px; text-align: center;}
             }
 
-            p { font-size: 18px; color: $white; line-height: 30px; padding: 0 0 40px;
+            p { font-size: 28px; color: $white; line-height: 30px; padding: 0 0 40px;
                 @include breakpoint(brotherbear) { font-size: 16px; line-height: 23px;}
                 @include breakpoint(mamabear) { text-align: center; padding-right: 0;}
             }

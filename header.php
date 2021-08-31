@@ -29,28 +29,28 @@
 
                 <div class="max__width">
 
-                    <div class="header_logo_menu">
+                    <!-- <div class="header_logo_menu">
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.webp" alt="<?php bloginfo('name'); ?>">
                             </a>
-                        </div><!-- logo -->
-                    </div>
+                        </div> logo -->
+                    <!-- </div>  -->
 
                     <div class="header__cta">
 
-                        <ul class="contact">
-                            <li><i class="fa fa-phone"></i><a href="tel:01534840400">01534 840 400</a></li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:info@quereeoptometrists.co.uk">Email Us</a></li>
-                        </ul>
-
-                        <div class="header__menu">
+                        <!-- <div class="header__menu">
                             <?php wp_nav_menu(array('menu' => 'Main Menu', 'container' => false)); ?>
-                        </div><!-- header__right -->
+                        </div>
 
                         <div class="oc__nav__trigger">
                             <a class="button outline primary small"><i class="fal fa-align-left"></i>Menu</a>
-                        </div>
+                        </div> -->
+
+                        <ul class="contact">
+                            <li><i class="fa fa-phone"></i><a href="tel:01727614043">01727 614 043</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@clarity11.co.uk">Email Us</a></li>
+                        </ul>
  
                     </div>
 

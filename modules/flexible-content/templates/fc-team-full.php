@@ -35,7 +35,6 @@ $team_full = new WP_Query(array(
         <article data-image-list="<?php echo $team_img['url']; ?>">
             <a href="#<?php echo $member_id; ?>" title="<?php echo get_the_title(); ?>" class="team__modal">
                 <span class="team__overlay">
-                    <?php/* <h3><?php echo get_the_title(); ?><span><?php the_field('team_job_title'); ?></span></h3> */?>
                     <span class="team__more">Meet <?php echo $first_name; ?></span>
                 </span><!-- team__overlay -->
                 <img src="<?php echo $team_img['url']; ?>" alt="<?php echo get_the_title(); ?>" />

@@ -19,7 +19,7 @@
             }
         }
 
-        .banner__caption { top:auto;
+        .banner__caption { top:auto; font-family: $khalifa;
 
             h1 { font-size: 38px; color:#fff;  position: relative; z-index: 2;
                 @include breakpoint(sisterbear) { font-size:28px; padding-top:80px;}

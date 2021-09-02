@@ -80,6 +80,8 @@ body { font-family:$primaryFont; font-size:$baseFontSize;  color:$text; overflow
     //     background-image: url(img/left-elipse.png); background-position: top left; background-repeat: no-repeat; background-size: 800px;
     // }
 
+    strong{ font-family: $boldFont }
+
     section.banners{
         .banner{
             .banner__width{
@@ -159,7 +161,6 @@ body { font-family:$primaryFont; font-size:$baseFontSize;  color:$text; overflow
 a {
     &:hover { transition:all .3s ease;}
 
-    strong{ }
 }
 
 /* Wrap */
@@ -250,7 +251,7 @@ a.button, button.button { display: flex; background: $secondary; align-self: fle
 
 header.header { width:100%; transition: top .3s ease; position: sticky; z-index: 999999999; top: 0;
 
-    .header__main { position: fixed; width: 100%;
+    .header__main { position: fixed; width: 100%; background: #000;
         @include breakpoint(papabear) { padding: 5px 0;}
 
         .max__width { display: flex; justify-content: space-between; align-items: center;}
@@ -418,14 +419,11 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
     }
 
     &.sticky,
-    &.not-sticky { background: rgba(darken($primary, 15%), .8); transition: top .3s ease;
-        .logo {
-            img{ width: 90px; transition: top .3s ease;}
+    &.not-sticky { transition: top .3s ease;
+        .header__main{
+            background: rgba(darken($primary, 15%), .8);
         }
     }
-
-    &.sticky { top: 0;}
-    &.not-sticky { top: -150px;}
 
     &.reset {        
         .logo { 
@@ -523,7 +521,7 @@ section {
 footer { padding: 0; position: relative;
 
     .footer__menus{
-        background: $primary;
+        background: $secondary;
 
         .max__width{
             padding: 60px; display:flex;
@@ -556,8 +554,6 @@ footer { padding: 0; position: relative;
                         a { font-size: 16px; color: $white; cursor: pointer;
 
                             @include breakpoint(papabear) { font-size: 16px;}
-
-                            &:hover { color: $secondary; opacity: 1;}
                         }
 
                         ul{display: none!important;}
@@ -589,13 +585,13 @@ footer { padding: 0; position: relative;
     }
 
     .subfooter {
-        background: $white; padding: 40px 0 20px;
+        background: $white; padding: 20px 0 20px;
         @include breakpoint(papabear) { margin-top: 0; border-top: none;}
 
         .subfooter__credits { display:flex; flex-direction: column; text-align: center; align-items: center;
 
             img{
-                width: 200px; margin-bottom: 20px;
+                width: 160px; margin-bottom: 20px;
             }
             
             p { font-size:14px; line-height:20px; color: $text;

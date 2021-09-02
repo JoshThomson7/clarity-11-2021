@@ -53,7 +53,7 @@ html, body {
   height: 100%;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20863,7 +20863,7 @@ nav.header__nav a.nav__button:hover {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  padding: 10px 5px 6px;
+  padding: 10px 5px 25px;
 }
 .breadcrumbs__link {
   font-size: 13px;
@@ -25884,7 +25884,7 @@ Flexible Content
 .flexible__content .fc_team .team__wrap article a .team__overlay,
 .flexible__content .fc_team_full .team__wrap article a .team__overlay {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 84px);
   position: absolute;
   left: 0;
   top: 0;
@@ -25919,19 +25919,17 @@ Flexible Content
 .flexible__content .fc_team .team__wrap article a .team__overlay span.team__more,
 .flexible__content .fc_team_full .team__wrap article a .team__overlay span.team__more {
   padding: 10px 0;
-  color: #820905;
+  color: #FFFFFE;
   text-align: center;
   font-size: 22px;
   display: block;
-  margin-bottom: 40px;
 }
 .flexible__content .fc_team .team__wrap article h5,
 .flexible__content .fc_team_full .team__wrap article h5 {
-  padding: 15px 0;
+  padding: 15px 0 10px;
   text-align: center;
   margin-bottom: 0;
   font-size: 26px;
-  bottom: 0px;
   width: 100%;
   background: rgba(241, 245, 247, 0.8);
   color: #c31a13;
@@ -25946,6 +25944,19 @@ Flexible Content
   color: white;
   display: block;
   line-height: 16px;
+}
+.flexible__content .fc_team .team__wrap article p,
+.flexible__content .fc_team_full .team__wrap article p {
+  padding: 5px 0 10px;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+  background: rgba(241, 245, 247, 0.8);
+  color: #c31a13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
 }
 .flexible__content .fc_team .team__wrap article img,
 .flexible__content .fc_team_full .team__wrap article img {
@@ -28482,6 +28493,9 @@ body.no__scroll {
   display: flex;
   flex-direction: column;
 }
+#page strong {
+  font-family: "Museo 700";
+}
 @media (max-width: 700px) {
   #page section.banners .banner .banner__width {
     flex-direction: column !important;
@@ -28579,6 +28593,7 @@ body.no__scroll {
 a:hover {
   transition: all 0.3s ease;
 }
+
 /* Wrap */
 .max__width {
   max-width: 1400px;
@@ -28782,6 +28797,7 @@ header.header {
 header.header .header__main {
   position: fixed;
   width: 100%;
+  background: #000;
 }
 @media (max-width: 1024px) {
   header.header .header__main {
@@ -29057,18 +29073,10 @@ header.header .header__main .header__cta ul li a.button {
   }
 }
 header.header.sticky, header.header.not-sticky {
+  transition: top 0.3s ease;
+}
+header.header.sticky .header__main, header.header.not-sticky .header__main {
   background: rgba(125, 17, 12, 0.8);
-  transition: top 0.3s ease;
-}
-header.header.sticky .logo img, header.header.not-sticky .logo img {
-  width: 90px;
-  transition: top 0.3s ease;
-}
-header.header.sticky {
-  top: 0;
-}
-header.header.not-sticky {
-  top: -150px;
 }
 header.header.reset .logo img {
   width: 125px;
@@ -29194,7 +29202,7 @@ footer {
   position: relative;
 }
 footer .footer__menus {
-  background: #c31a13;
+  background: #820905;
 }
 footer .footer__menus .max__width {
   padding: 60px;
@@ -29282,10 +29290,6 @@ footer .footer__menus .max__width article ul li a {
     font-size: 16px;
   }
 }
-footer .footer__menus .max__width article ul li a:hover {
-  color: #820905;
-  opacity: 1;
-}
 footer .footer__menus .max__width article ul li ul {
   display: none !important;
 }
@@ -29319,7 +29323,7 @@ footer .footer__menus .max__width article.social p {
 }
 footer .subfooter {
   background: #FFFFFE;
-  padding: 40px 0 20px;
+  padding: 20px 0 20px;
 }
 @media (max-width: 1024px) {
   footer .subfooter {
@@ -29334,7 +29338,7 @@ footer .subfooter .subfooter__credits {
   align-items: center;
 }
 footer .subfooter .subfooter__credits img {
-  width: 200px;
+  width: 160px;
   margin-bottom: 20px;
 }
 footer .subfooter .subfooter__credits p {
